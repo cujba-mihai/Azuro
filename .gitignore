@@ -16,6 +16,9 @@ web-build/
 *.key
 *.mobileprovision
 
+%ProgramData%
+.yarn
+
 # Metro
 .metro-health-check*
 
@@ -33,3 +36,13 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+
+# Dependencies
+node_modules
+
+# Tests
+coverage
+
+# MacOS
+.DS_Store
