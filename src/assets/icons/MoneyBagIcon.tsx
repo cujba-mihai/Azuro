@@ -1,6 +1,6 @@
-import * as React from 'react'
-import Svg, { G, Path, Defs, Pattern, Use, Image } from 'react-native-svg'
-/* SVGR has dropped some elements not supported by react-native-svg: filter */ import type { SvgProps } from 'react-native-svg'
+import * as React from "react";
+import Svg, { G, Path, Defs, Pattern, Use, Image } from "react-native-svg";
+/* SVGR has dropped some elements not supported by react-native-svg: filter */ import type { SvgProps } from "react-native-svg";
 const SvgMoneyBagIcon = (props: SvgProps) => (
   <Svg width={85} height={84} fill="none" {...props}>
     <G filter="url(#a)">
@@ -23,5 +23,5 @@ const SvgMoneyBagIcon = (props: SvgProps) => (
       />
     </Defs>
   </Svg>
-)
-export default SvgMoneyBagIcon
+);
+export default SvgMoneyBagIcon;

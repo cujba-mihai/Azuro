@@ -1,25 +1,21 @@
-import * as S from './styles/styles'
-import { SkipButton } from '../Buttons/SkipButton'
-import CarouselProgress, { ONBOARDING_STEPS } from './cards/CarouselProgress'
-import { useState } from 'react'
-import { StepCard } from './cards/StepCard'
-import ContinueButton from './buttons/ContinueButton'
-import FinishButton from './buttons/FinishButton'
+import * as S from "./styles/styles";
+import { SkipButton } from "../Buttons/SkipButton";
+import CarouselProgress, { ONBOARDING_STEPS } from "./cards/CarouselProgress";
+import { useState } from "react";
+import { StepCard } from "./cards/StepCard";
+import ContinueButton from "./buttons/ContinueButton";
+import FinishButton from "./buttons/FinishButton";
 
-const numberOfSteps = ONBOARDING_STEPS.length - 1
+const numberOfSteps = ONBOARDING_STEPS.length - 1;
 
 export const OnboardingCarousel = () => {
-  const [step, setStep] = useState(0)
+  const [step, setStep] = useState(0);
 
   const handleNextStep = () => {
     if (step < numberOfSteps) {
-      setStep((prev) => prev + 1)
+      setStep((prev) => prev + 1);
     }
-  }
-
-  const handleSkip = () => {
-    setStep(numberOfSteps)
-  }
+  };
 
   return (
     <S.Container>
@@ -39,5 +35,5 @@ export const OnboardingCarousel = () => {
         <FinishButton />
       )}
     </S.Container>
-  )
-}
+  );
+};

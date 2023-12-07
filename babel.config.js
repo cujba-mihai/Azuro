@@ -1,27 +1,27 @@
 module.exports = function (api) {
-  api.cache(true)
+  api.cache(true);
   return {
-    presets: ['babel-preset-expo', '@babel/preset-typescript'],
+    presets: ["babel-preset-expo", "@babel/preset-typescript"],
     plugins: [
-      require.resolve('expo-router/babel'),
-      'react-native-reanimated/plugin',
+      require.resolve("expo-router/babel"),
+      "react-native-reanimated/plugin",
       [
-        'module-resolver',
+        "module-resolver",
         {
-          root: ['./src'],
+          root: ["./src"],
           extensions: [
-            '.js',
-            '.jsx',
-            '.ts',
-            '.tsx',
-            '.android.js',
-            '.android.tsx',
-            '.ios.js',
-            '.ios.tsx'
-          ]
-        }
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx",
+            ".android.js",
+            ".android.tsx",
+            ".ios.js",
+            ".ios.tsx",
+          ],
+        },
       ],
-      ['babel-plugin-react-docgen-typescript', { exclude: 'node_modules' }]
-    ]
-  }
-}
+      ["babel-plugin-react-docgen-typescript", { exclude: "node_modules" }],
+    ],
+  };
+};

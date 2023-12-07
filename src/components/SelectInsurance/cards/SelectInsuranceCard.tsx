@@ -1,5 +1,5 @@
-import React, { useMemo } from 'react'
-import i18n from '../../../../i18n'
+import React from "react";
+import i18n from "../../../../i18n";
 import {
   BuildingsIcon,
   GarageIcon,
@@ -8,62 +8,62 @@ import {
   InsuranceIcon,
   MoneyBagIcon,
   TravelersIcon,
-  ZenIcon
-} from 'assets/icons'
-import { Card, Text } from 'react-native-paper'
-import { FlatList } from 'react-native-gesture-handler'
+  ZenIcon,
+} from "assets/icons";
+import { Card } from "react-native-paper";
+import { FlatList } from "react-native-gesture-handler";
 import {
   StyledSelectInsuranceCard,
   StyledSelectInsuranceContainer,
-  StyledSelectInsuranceText
-} from '../styles'
+  StyledSelectInsuranceText,
+} from "../styles";
 
 const INSURANCE_OPTIONS = [
   {
     icon: <GrayCarIcon height={65} />,
-    label: i18n.t('onboarding.selectInsurance.rca')
+    label: i18n.t("onboarding.selectInsurance.rca"),
   },
   {
     icon: <TravelersIcon height={65} />,
-    label: i18n.t('onboarding.selectInsurance.travelers')
+    label: i18n.t("onboarding.selectInsurance.travelers"),
   },
   {
     icon: <InsuranceIcon height={65} />,
-    label: i18n.t('onboarding.selectInsurance.healthInsurance')
+    label: i18n.t("onboarding.selectInsurance.healthInsurance"),
   },
   {
     icon: <GreenCar height={65} />,
-    label: i18n.t('onboarding.selectInsurance.greenBook')
+    label: i18n.t("onboarding.selectInsurance.greenBook"),
   },
   {
     icon: <GarageIcon height={65} />,
-    label: i18n.t('onboarding.selectInsurance.casco')
+    label: i18n.t("onboarding.selectInsurance.casco"),
   },
   {
     icon: <BuildingsIcon height={65} />,
-    label: i18n.t('onboarding.selectInsurance.realEstate')
+    label: i18n.t("onboarding.selectInsurance.realEstate"),
   },
   {
     icon: <MoneyBagIcon height={65} />,
-    label: i18n.t('onboarding.selectInsurance.insurance')
+    label: i18n.t("onboarding.selectInsurance.insurance"),
   },
   {
     icon: <ZenIcon height={65} />,
-    label: i18n.t('onboarding.selectInsurance.financialInsurance')
-  }
-]
+    label: i18n.t("onboarding.selectInsurance.financialInsurance"),
+  },
+];
 
 export const SelectInsuranceCard = () => {
   const renderItem = ({
     item,
-    index
+    index,
   }: {
-    item: (typeof INSURANCE_OPTIONS)[0]
-    index: number
+    item: (typeof INSURANCE_OPTIONS)[0];
+    index: number;
   }) => {
-    const numberOfRows = Math.ceil(INSURANCE_OPTIONS.length / 2)
+    const numberOfRows = Math.ceil(INSURANCE_OPTIONS.length / 2);
 
-    const currentRow = Math.floor(index / 2)
+    const currentRow = Math.floor(index / 2);
 
     return (
       <StyledSelectInsuranceContainer
@@ -73,7 +73,7 @@ export const SelectInsuranceCard = () => {
           marginLeft: index % 2 === 0 ? 6.5 : 15,
           marginRight: index % 2 === 0 ? 0 : 6.5,
           marginTop: currentRow === 0 ? 0 : 15,
-          marginBottom: currentRow === numberOfRows - 1 ? 15 : 0
+          marginBottom: currentRow === numberOfRows - 1 ? 15 : 0,
         }}
       >
         <StyledSelectInsuranceCard mode="contained">
@@ -83,8 +83,8 @@ export const SelectInsuranceCard = () => {
           </Card.Content>
         </StyledSelectInsuranceCard>
       </StyledSelectInsuranceContainer>
-    )
-  }
+    );
+  };
 
   return (
     <FlatList
@@ -92,7 +92,7 @@ export const SelectInsuranceCard = () => {
       renderItem={renderItem}
       keyExtractor={(item) => item.label}
       numColumns={2}
-      contentContainerStyle={{ alignItems: 'stretch' }}
+      contentContainerStyle={{ alignItems: "stretch" }}
     />
-  )
-}
+  );
+};

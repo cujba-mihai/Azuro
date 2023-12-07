@@ -1,15 +1,15 @@
-import { ComponentMeta, ComponentStoryObj } from '@storybook/react-native'
-import { SplashScreen } from './index'
+import { ComponentMeta, ComponentStoryObj } from "@storybook/react-native";
+import { SplashScreen } from "./index";
 
 const SplashScreenMeta: ComponentMeta<typeof SplashScreen> = {
-  title: 'SplashScreen',
+  title: "SplashScreen",
   component: SplashScreen,
   argTypes: {},
-  args: {}
-}
+  args: {},
+};
 
-export default SplashScreenMeta
+export default SplashScreenMeta;
 
-type SplashScreenStory = ComponentStoryObj<typeof SplashScreen>
+type SplashScreenStory = ComponentStoryObj<typeof SplashScreen>;
 
-export const Basic: SplashScreenStory = {}
+export const Basic: SplashScreenStory = {};

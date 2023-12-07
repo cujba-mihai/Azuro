@@ -1,15 +1,8 @@
-import { OnboardingCarousel } from 'components/OnboardingCarousel'
-import React from 'react'
-import { StyleSheet } from 'react-native'
+import { OnboardingCarousel } from "components/OnboardingCarousel";
+import React from "react";
 
 const MyPager = () => {
-  return <OnboardingCarousel />
-}
+  return <OnboardingCarousel />;
+};
 
-export default MyPager
-
-const styles = StyleSheet.create({
-  pagerView: {
-    flex: 1
-  }
-})
+export default MyPager;

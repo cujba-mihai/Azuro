@@ -1,8 +1,8 @@
-import React from 'react'
-import { Text } from 'react-native-paper'
+import React from "react";
+import { Text } from "react-native-paper";
 
 const HomePage = () => {
-  return <Text>index</Text>
-}
+  return <Text>index</Text>;
+};
 
-export default HomePage
+export default HomePage;

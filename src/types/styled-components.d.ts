@@ -1,7 +1,7 @@
-import theme from 'styles/theme'
+import theme from "styles/theme";
 
-type Theme = typeof theme
+type Theme = typeof theme;
 
-declare module 'styled-components/native' {
+declare module "styled-components/native" {
   export interface DefaultTheme extends Theme {}
 }

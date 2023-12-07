@@ -1,8 +1,8 @@
-import { ConfigContext } from 'expo/config'
+import { ConfigContext } from "expo/config";
 
 export default ({ config }: ConfigContext) => ({
   ...config,
   extra: {
-    storybookEnabled: process.env.STORYBOOK_ENABLED
-  }
-})
+    storybookEnabled: process.env.STORYBOOK_ENABLED,
+  },
+});

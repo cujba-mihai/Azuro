@@ -1,6 +1,6 @@
-import { atom } from 'recoil'
+import { atom } from "recoil";
 
 export const languageState = atom({
-  key: 'languageState',
-  default: 'ro'
-})
+  key: "languageState",
+  default: "ro",
+});

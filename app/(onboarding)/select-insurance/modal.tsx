@@ -1,59 +1,59 @@
-import { View, Text } from 'react-native'
-import { Link, router } from 'expo-router'
-import { StatusBar } from 'expo-status-bar'
+import { View, Text } from "react-native";
+import { Link, router } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import {
   Appbar,
   IconButton,
   RadioButton,
   TextInput,
-  Tooltip
-} from 'react-native-paper'
-import { Header } from 'components/Typography'
-import { useState } from 'react'
-import { useNavigation } from '@react-navigation/native'
-import { HelpCenterIcon } from 'assets/icons'
-import { ButtonLinkComponent } from 'components/Buttons'
+  Tooltip,
+} from "react-native-paper";
+import { Header } from "components/Typography";
+import { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
+import { HelpCenterIcon } from "assets/icons";
+import { ButtonLinkComponent } from "components/Buttons";
 
 export default function Modal() {
-  const [value, setValue] = useState('Persoană fizică')
-  const navigation = useNavigation()
-  const [text, setText] = useState('')
+  const [value, setValue] = useState("Persoană fizică");
+  const navigation = useNavigation();
+  const [text, setText] = useState("");
 
-  const isPresented = router.canGoBack()
+  const isPresented = router.canGoBack();
 
   return (
     <View
       style={{
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'white'
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "white",
       }}
     >
-      <Appbar style={{ justifyContent: 'center', alignContent: 'center' }}>
+      <Appbar style={{ justifyContent: "center", alignContent: "center" }}>
         {!isPresented && <Link href="../">Dismiss</Link>}
         <Appbar.BackAction onPress={() => navigation.goBack()} />
         <Header>Introduceți datele personale</Header>
       </Appbar>
 
-      <View style={{ width: '100%', paddingLeft: 20, paddingRight: 20 }}>
+      <View style={{ width: "100%", paddingLeft: 20, paddingRight: 20 }}>
         <RadioButton.Group
           onValueChange={(newValue) => setValue(newValue)}
           value={value}
         >
           <View
             style={{
-              width: '100%',
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              alignItems: 'center'
+              width: "100%",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
             }}
           >
             <View
               style={{
-                flexDirection: 'row',
-                alignItems: 'center',
+                flexDirection: "row",
+                alignItems: "center",
                 marginLeft: -10,
-                justifyContent: 'space-between'
+                justifyContent: "space-between",
               }}
             >
               <RadioButton color="#167743" value="Persoană fizică" />
@@ -61,9 +61,9 @@ export default function Modal() {
             </View>
             <View
               style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between'
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "space-between",
               }}
             >
               <RadioButton color="#167743" value="Persoană juridică" />
@@ -104,10 +104,10 @@ export default function Modal() {
 
         <HelpCenterIcon
           style={{
-            marginRight: 'auto',
-            marginLeft: 'auto',
+            marginRight: "auto",
+            marginLeft: "auto",
             marginBottom: 25,
-            marginTop: 50
+            marginTop: 50,
           }}
         />
 
@@ -118,5 +118,5 @@ export default function Modal() {
 
       <StatusBar style="light" />
     </View>
-  )
+  );
 }

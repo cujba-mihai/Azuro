@@ -1,19 +1,19 @@
-import React from 'react'
-import { Card } from 'react-native-paper'
-import * as S from '../styles/styles'
-import * as Typography from 'components/Typography'
-import { ONBOARDING_STEPS } from './CarouselProgress'
-import i18n from '../../../../i18n'
+import React from "react";
+import { Card } from "react-native-paper";
+import * as S from "../styles/styles";
+import * as Typography from "components/Typography";
+import { ONBOARDING_STEPS } from "./CarouselProgress";
+import i18n from "../../../../i18n";
 
 interface IStepCardProps {
-  step: Extract<keyof typeof ONBOARDING_STEPS, number>
+  step: Extract<keyof typeof ONBOARDING_STEPS, number>;
 }
 
 const CardCoverMapping = [
-  <S.FirstScreenImage />,
-  <S.SecondScreenImage />,
-  <S.ThirdScreenImage />
-]
+  <S.FirstScreenImage key={0} />,
+  <S.SecondScreenImage key={10} />,
+  <S.ThirdScreenImage key={20} />,
+];
 
 export const StepCard = ({ step }: IStepCardProps) => {
   return (
@@ -37,5 +37,5 @@ export const StepCard = ({ step }: IStepCardProps) => {
         </Card.Content>
       </S.MarginTop30>
     </>
-  )
-}
+  );
+};

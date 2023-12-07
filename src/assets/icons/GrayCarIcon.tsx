@@ -1,6 +1,6 @@
-import * as React from 'react'
-import Svg, { Path, Defs, Pattern, Use, Image } from 'react-native-svg'
-import type { SvgProps } from 'react-native-svg'
+import * as React from "react";
+import Svg, { Path, Defs, Pattern, Use, Image } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
 const SvgGrayCarIcon = (props: SvgProps) => (
   <Svg width={71} height={58} fill="none" {...props}>
     <Path fill="url(#a)" d="M.5 0h70v58H.5z" />
@@ -21,5 +21,5 @@ const SvgGrayCarIcon = (props: SvgProps) => (
       />
     </Defs>
   </Svg>
-)
-export default SvgGrayCarIcon
+);
+export default SvgGrayCarIcon;

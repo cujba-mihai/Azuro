@@ -1,6 +1,5 @@
-import { Link } from 'expo-router'
-import { StyleProp, TextStyle } from 'react-native'
-import styled, { css } from 'styled-components/native'
+import { Link } from "expo-router";
+import styled, { css } from "styled-components/native";
 
 const ButtonLink = styled(Link)`
   ${({ theme }) => css`
@@ -22,7 +21,7 @@ const ButtonLink = styled(Link)`
 
     text-align: center;
   `}
-`
+`;
 
 const GhostButtonLink = styled(Link)`
   ${({ theme }) => css`
@@ -43,14 +42,14 @@ const GhostButtonLink = styled(Link)`
 
     text-align: right;
   `}
-`
+`;
 
 export const ButtonLinkComponent = ({
   to,
   children,
-  ghost = false
+  ghost = false,
 }: { ghost?: boolean; to: string } & React.PropsWithChildren) => {
-  if (ghost) return <GhostButtonLink href={to}>{children}</GhostButtonLink>
+  if (ghost) return <GhostButtonLink href={to}>{children}</GhostButtonLink>;
 
-  return <ButtonLink href={to}>{children}</ButtonLink>
-}
+  return <ButtonLink href={to}>{children}</ButtonLink>;
+};

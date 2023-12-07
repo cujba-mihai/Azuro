@@ -1,6 +1,6 @@
-import * as React from 'react'
-import Svg, { Path, Defs, Pattern, Use, Image } from 'react-native-svg'
-import type { SvgProps } from 'react-native-svg'
+import * as React from "react";
+import Svg, { Path, Defs, Pattern, Use, Image } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
 const SvgZenIcon = (props: SvgProps) => (
   <Svg width={66} height={65} fill="none" {...props}>
     <Path fill="url(#a)" d="M.5 0h65v65H.5z" />
@@ -21,5 +21,5 @@ const SvgZenIcon = (props: SvgProps) => (
       />
     </Defs>
   </Svg>
-)
-export default SvgZenIcon
+);
+export default SvgZenIcon;

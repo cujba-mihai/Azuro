@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from "react";
 import Svg, {
   Path,
   G,
@@ -7,9 +7,9 @@ import Svg, {
   ClipPath,
   Pattern,
   Use,
-  Image
-} from 'react-native-svg'
-import type { SvgProps } from 'react-native-svg'
+  Image,
+} from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
 const SvgTravelersIcon = (props: SvgProps) => (
   <Svg width={98} height={68} fill="none" {...props}>
     <Path fill="#1E1E1E" d="M0 0h98v68H0z" />
@@ -38,5 +38,5 @@ const SvgTravelersIcon = (props: SvgProps) => (
       />
     </Defs>
   </Svg>
-)
-export default SvgTravelersIcon
+);
+export default SvgTravelersIcon;
