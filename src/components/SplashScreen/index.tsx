@@ -1,11 +1,11 @@
-import React, { useRef, useEffect } from 'react';
-import { Animated, View, Image } from 'react-native';
+import React, { useRef, useEffect } from 'react'
+import { Animated, View, Image } from 'react-native'
 import assets from 'assets'
-import * as S from './styles';
-import { AzuroLogo } from 'assets/icons';
+import * as S from './styles'
+import { AzuroLogo } from 'assets/icons'
 
 export const SplashScreen = () => {
-  const pulseAnim = useRef(new Animated.Value(1)).current;
+  const pulseAnim = useRef(new Animated.Value(1)).current
 
   useEffect(() => {
     Animated.loop(
@@ -21,11 +21,18 @@ export const SplashScreen = () => {
           useNativeDriver: true
         })
       ])
-    ).start();
-  }, [pulseAnim]);
+    ).start()
+  }, [pulseAnim])
 
   return (
-    <View style={{ flex: 1, backgroundColor: 'black', justifyContent: 'center', alignItems: 'center' }}>
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: 'black',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+    >
       <Animated.View
         style={{
           width: 200,
@@ -38,5 +45,5 @@ export const SplashScreen = () => {
         <AzuroLogo />
       </Animated.View>
     </View>
-  );
-};
+  )
+}

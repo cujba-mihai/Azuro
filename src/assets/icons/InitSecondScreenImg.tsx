@@ -2,12 +2,7 @@ import * as React from 'react'
 import Svg, { Path, Defs, Pattern, Use, Image } from 'react-native-svg'
 import type { SvgProps } from 'react-native-svg'
 const SvgInitSecondScreenImg = (props: SvgProps) => (
-  <Svg
-    width={309}
-    height={264}
-    fill="none"
-    {...props}
-  >
+  <Svg width={309} height={264} fill="none" {...props}>
     <Path fill="url(#a)" d="M0 0h309v264H0z" />
     <Defs>
       <Pattern

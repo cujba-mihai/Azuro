@@ -1,15 +1,15 @@
-import { ComponentMeta, ComponentStoryObj } from '@storybook/react-native';
-import { SelectInsurance } from './index';
+import { ComponentMeta, ComponentStoryObj } from '@storybook/react-native'
+import { SelectInsurance } from './index'
 
 const SelectInsuranceMeta: ComponentMeta<typeof SelectInsurance> = {
-    title: 'SelectInsurance',
-    component: SelectInsurance,
-    argTypes: {},
-    args: {},
-};
+  title: 'SelectInsurance',
+  component: SelectInsurance,
+  argTypes: {},
+  args: {}
+}
 
-export default SelectInsuranceMeta;
+export default SelectInsuranceMeta
 
-type SelectInsuranceStory = ComponentStoryObj<typeof SelectInsurance>;
+type SelectInsuranceStory = ComponentStoryObj<typeof SelectInsurance>
 
-export const Basic: SelectInsuranceStory = {};
+export const Basic: SelectInsuranceStory = {}

@@ -2,12 +2,7 @@ import * as React from 'react'
 import Svg, { Path, Defs, Pattern, Use, Image } from 'react-native-svg'
 import type { SvgProps } from 'react-native-svg'
 const SvgGreenCar = (props: SvgProps) => (
-  <Svg
-    width={72}
-    height={48}
-    fill="none"
-    {...props}
-  >
+  <Svg width={72} height={48} fill="none" {...props}>
     <Path fill="url(#a)" d="M.5 0h71v48H.5z" />
     <Defs>
       <Pattern

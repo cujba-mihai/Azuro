@@ -2,12 +2,7 @@ import * as React from 'react'
 import Svg, { G, Path, Defs, Pattern, Use, Image } from 'react-native-svg'
 /* SVGR has dropped some elements not supported by react-native-svg: filter */ import type { SvgProps } from 'react-native-svg'
 const SvgInsuranceIcon = (props: SvgProps) => (
-  <Svg
-    width={86}
-    height={64}
-    fill="none"
-    {...props}
-  >
+  <Svg width={86} height={64} fill="none" {...props}>
     <G filter="url(#a)">
       <Path fill="url(#b)" d="M0 0h77v56H0z" transform="translate(4.5)" />
     </G>

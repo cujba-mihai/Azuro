@@ -7,13 +7,13 @@ const theme = {
     medium: 'Inter_500Medium',
     bold: 'Inter_700Bold',
     normalText: {
-      fontFamily: 'Calibri',
+      fontFamily: 'Calibri'
     },
     boldText: {
-      fontFamily: 'Calibri-Bold',
+      fontFamily: 'Calibri-Bold'
     },
     italicText: {
-      fontFamily: 'Calibri-Italic',
+      fontFamily: 'Calibri-Italic'
     },
     logoText: {
       fontFamily: 'Comfortaa'
@@ -21,11 +21,11 @@ const theme = {
     sizes: {}
   },
   spacing: {
-    xxl: 20,
+    xxl: 20
   },
   borderRadius: {
     none: 0,
-    md: 8,
+    md: 8
   },
   colors: {
     // Primary colors
@@ -62,7 +62,6 @@ const theme = {
     /**  Gray Neutral/100  */
     customLight: '#F3F4F6',
 
-
     // Base colors (background, content)
     base100: '#ffffff', // Lighter background
     base200: '#000000', // Darker background
@@ -89,10 +88,10 @@ const theme = {
   gradients: {},
   spacings: {
     none: 0,
-    xs: 4,
+    xs: 4
   },
   gap: {
-    10: 10,
+    10: 10
   },
   layers: {
     base: 10,
@@ -102,9 +101,7 @@ const theme = {
     alwaysOnTop: 50
   },
   transition: {},
-  shadows: {
-
-  }
+  shadows: {}
 } as const
 
 export type Colors = keyof typeof theme.colors

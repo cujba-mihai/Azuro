@@ -1,7 +1,11 @@
-import { InitFirstScreenImg, InitSecondScreenImg, InitThirdScreenImg } from 'assets/icons';
-import { Link } from 'expo-router';
-import { View } from 'react-native';
-import { Button, Card, Text } from 'react-native-paper';
+import {
+  InitFirstScreenImg,
+  InitSecondScreenImg,
+  InitThirdScreenImg
+} from 'assets/icons'
+import { Link } from 'expo-router'
+import { View } from 'react-native'
+import { Button, Card, Text } from 'react-native-paper'
 import styled, { css } from 'styled-components/native'
 
 export const Container = styled.View`
@@ -25,7 +29,7 @@ export const SkipButton = styled(Link)`
   align-items: center;
 
   margin-left: auto;
-`;
+`
 
 export const StyledText = styled(Text)`
   color: ${({ theme }) => theme.colors.neutralFocus};
@@ -68,7 +72,6 @@ export const ThirdScreenImage = styled(InitThirdScreenImg)`
 export const StyledCard = styled(Card)`
   background-color: ${({ theme }) => theme.colors.base100};
   gap: 30px;
-
 `
 
 export const ContinueButton = styled(Button)`
@@ -86,9 +89,8 @@ export const ContinueButtonText = styled(Text)`
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; 
+  line-height: 20px;
 `
-
 
 export const BoxShadow = styled(View)`
   shadow-color: #101828;
@@ -98,8 +100,7 @@ export const BoxShadow = styled(View)`
   elevation: 2;
 
   margin-top: auto;
-`;
-
+`
 
 export const FinishButton = styled(Link)`
   background-color: ${({ theme }) => theme.colors.accent};
@@ -133,5 +134,5 @@ export const CircleBackground = styled(View)`
 export const CarouselProgressContainer = styled(View)`
   margin: 0px auto;
   width: 50px;
-  height: 10px; 
+  height: 10px;
 `

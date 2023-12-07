@@ -10,7 +10,8 @@
     "generate": "yarn plop --plopfile generators/plopfile.js",
     "storybook-generate": "sb-rn-get-stories --config-path=./.storybook --unstable_useRequireContext",
     "storybook-watch": "sb-rn-watcher",
-    "icons": "npx @svgr/cli  --native --out-dir src/assets/icons -- ./src/assets"
+    "icons": "npx @svgr/cli  --native --out-dir src/assets/icons -- ./src/assets && node ./clean-svgs.js && yarn lint --fix",
+    "format": "prettier --write \"**/*.{tsx,jsx,ts,js}\""
   },
   "dependencies": {
     "@expo-google-fonts/comfortaa": "^0.2.3",
@@ -65,6 +66,7 @@
     "jest-expo": "^49.0.0",
     "metro-react-native-babel-preset": "^0.77.0",
     "plop": "^4.0.0",
+    "prettier": "^3.1.0",
     "react-dom": "^18.2.0",
     "react-native-modal-datetime-picker": "^17.1.0",
     "react-native-safe-area-context": "4.6.3",

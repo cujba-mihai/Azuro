@@ -1,8 +1,8 @@
 {
-    "recommendations": [
-        "dbaeumer.vscode-eslint",
-        "dsznajder.es7-react-js-snippets",
-        "eamodio.gitlens",
-        "msjsdiag.vscode-react-native"
-    ]
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "dsznajder.es7-react-js-snippets",
+    "eamodio.gitlens",
+    "msjsdiag.vscode-react-native"
+  ]
 }

@@ -1,5 +1,5 @@
-import { Text } from "react-native-paper";
-import styled, { css } from "styled-components/native";
+import { Text } from 'react-native-paper'
+import styled, { css } from 'styled-components/native'
 
 export const CardHeader = styled.Text`
   color: ${({ theme }) => theme.colors.primaryContent};
@@ -10,7 +10,7 @@ export const CardHeader = styled.Text`
   font-style: normal;
   font-weight: 500;
   line-height: 38px;
-`;
+`
 
 export const CardSubheader = styled(Text)`
   color: ${({ theme }) => theme.colors.neutral};
@@ -21,12 +21,11 @@ export const CardSubheader = styled(Text)`
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; 
-
-`;
+  line-height: 24px;
+`
 
 export const ButtonText = styled(Text)`
-    ${({ theme }) => css`
+  ${({ theme }) => css`
     color: ${theme.colors.accentContent};
     text-align: center;
 
@@ -34,11 +33,9 @@ export const ButtonText = styled(Text)`
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px; 
-    `}
-`;
-
-
+    line-height: 20px;
+  `}
+`
 
 export const Header = styled(Text)`
   ${({ theme }) => css`
@@ -51,5 +48,4 @@ export const Header = styled(Text)`
     font-weight: 500;
     line-height: 32px;
   `}
-
 `

@@ -6,14 +6,14 @@ import { StepCard } from './cards/StepCard'
 import ContinueButton from './buttons/ContinueButton'
 import FinishButton from './buttons/FinishButton'
 
-const numberOfSteps = ONBOARDING_STEPS.length - 1;
+const numberOfSteps = ONBOARDING_STEPS.length - 1
 
 export const OnboardingCarousel = () => {
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(0)
 
   const handleNextStep = () => {
     if (step < numberOfSteps) {
-      setStep(prev => prev + 1);
+      setStep((prev) => prev + 1)
     }
   }
 
@@ -25,7 +25,7 @@ export const OnboardingCarousel = () => {
     <S.Container>
       <SkipButton to="select-insurance" />
 
-      <S.StyledCard mode='contained'>
+      <S.StyledCard mode="contained">
         <StepCard step={step} />
 
         <S.MarginTop30>
@@ -33,13 +33,11 @@ export const OnboardingCarousel = () => {
         </S.MarginTop30>
       </S.StyledCard>
 
-      {
-        step < numberOfSteps
-          ? <ContinueButton handleNextStep={handleNextStep} />
-          : <FinishButton />
-      }
-
+      {step < numberOfSteps ? (
+        <ContinueButton handleNextStep={handleNextStep} />
+      ) : (
+        <FinishButton />
+      )}
     </S.Container>
   )
 }
-

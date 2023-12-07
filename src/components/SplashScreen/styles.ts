@@ -17,9 +17,9 @@ export const Text = styled.Text`
 
 export const Logo = styled.Image`
   ${({ width, height }) => css`
-  width: ${width}px;
-  height: ${height}px;  
-  resizeMode: contain;
-  margin: 16px;
+    width: ${width}px;
+    height: ${height}px;
+    resizemode: contain;
+    margin: 16px;
   `}
-`;
+`

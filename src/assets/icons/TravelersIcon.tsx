@@ -11,12 +11,7 @@ import Svg, {
 } from 'react-native-svg'
 import type { SvgProps } from 'react-native-svg'
 const SvgTravelersIcon = (props: SvgProps) => (
-  <Svg
-    width={98}
-    height={68}
-    fill="none"
-    {...props}
-  >
+  <Svg width={98} height={68} fill="none" {...props}>
     <Path fill="#1E1E1E" d="M0 0h98v68H0z" />
     <G clipPath="url(#a)">
       <Path fill="#fff" d="M-217-173h390v844h-390z" />

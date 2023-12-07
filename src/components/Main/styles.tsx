@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components/native'
-import { Dimensions, Text as RNText } from 'react-native';
-import { Button, Modal } from 'react-native-paper';
+import { Dimensions, Text as RNText } from 'react-native'
+import { Button, Modal } from 'react-native-paper'
 
 export const StyledModal = styled(Modal)`
   ${({ theme }) => css`
@@ -12,15 +12,15 @@ export const StyledModal = styled(Modal)`
 
     gap: 30px;
   `}
-`;
+`
 
 export const Wrapper = styled.View`
   align-items: center;
   justify-content: center;
 `
 export const ChildElement = styled.View`
-  margin-bottom:30px;
-`;
+  margin-bottom: 30px;
+`
 
 export const Title = styled.Text`
   ${({ theme }) => css`
@@ -31,7 +31,7 @@ export const Title = styled.Text`
     margin-bottom: 24px;
     font-family: ${theme.font.normalText.fontFamily};
   `}
-`;
+`
 
 export const Text = styled.Text`
   ${({ theme }) => css`
@@ -44,11 +44,10 @@ export const Text = styled.Text`
 
 export const StyledButton = styled(Button)`
   ${({ theme }) => css`
-      display: flex;
-      justify-self: flex-end;
-      width: 150px;
-    `
-  }
+    display: flex;
+    justify-self: flex-end;
+    width: 150px;
+  `}
 `
 
 export const ButtonText = styled(RNText)`
@@ -56,9 +55,6 @@ export const ButtonText = styled(RNText)`
   font-size: 14px;
   font-weight: 600;
   color: white;
-`;
-
-
-export const TopBarContainer = styled.View`
-  
 `
+
+export const TopBarContainer = styled.View``
