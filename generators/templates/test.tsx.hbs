@@ -1,12 +1,14 @@
 import React from 'react'
 import { render, screen } from 'utils/test-utils'
 
-import {{pascalCase name}} from '.'
+import { {{pascalCase name}} } from './index'
 
-describe('<{{pascalCase name}} />', () => {
-  it('should render the text correctly', () => {
-    render(<{{pascalCase name}} />)
+describe('
+<{{pascalCase name}} />', () => {
+it('should render the text correctly', () => {
+render(
+<{{pascalCase name}} />)
 
-    expect(screen.getByText(/{{pascalCase name}}/i)).toBeTruthy()
-  })
+expect(screen.getByText(/{{pascalCase name}}/i)).toBeTruthy()
+})
 })

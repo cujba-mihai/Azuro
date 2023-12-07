@@ -1,18 +1,19 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import Constants from 'expo-constants'
 
 
-import Storybook from '../.storybook'
-import Main from 'components/Main'
+// import Storybook from '../.storybook'
+import Main from 'components/Main/index'
+import { OnboardingCarousel } from 'components/OnboardingCarousel'
 
 const index = () => {
-  return <Main />
+  return (<OnboardingCarousel />)
 }
 
 let AppEntryPoint = index
 
-if (Constants.expoConfig?.extra?.storybookEnabled === 'true') {
-  AppEntryPoint = Storybook
-}
+// if (Constants.expoConfig?.extra?.storybookEnabled === 'true') {
+//   AppEntryPoint = Storybook
+// }
 
 export default AppEntryPoint

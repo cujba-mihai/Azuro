@@ -1,3 +1,30 @@
 {
-    "greet": "Hello"
+    "greet": "Hello",
+    "skip": "Skip",
+    "continue": "Continue",
+    "start": "Start",
+    "onboarding": {
+        "step1": {
+            "title": "Protejarea asigurată",
+            "subtitle": "Cu noi, ai încrederea că datele tale sunt în mâini sigure, iar procesul de gestionare a asigurărilor devine simplu și lipsit de riscuri."
+        },
+        "step2": {
+            "title": "Compararea prețurilor",
+            "subtitle": "Puteți compara prețurile diferitelor asigurări și variațiilor acestora oferite de diferiți furnizori de asigurări pentru a găsi cea mai bună ofertă."
+        },
+        "step3": {
+            "title": "Achitarea online",
+            "subtitle": "Cu opțiunea noastră de achitare online în cadrul aplicației mobile, aducem comoditatea la nivelul maxim în gestionarea polițelor tale de asigurare."
+        },
+        "selectInsurance": {
+            "rca": "RCA (Responsabilitate Civilă Auto)",
+            "travelers": "Asigurarea medicală de călătorie",
+            "healthInsurance": "Asigurarea medicală",
+            "greenBook": "Carte Verde",
+            "casco": "Asigurarea CASCO",
+            "realEstate": "Asigurarea imobilului",
+            "insurance": "Asigurarea bunurilor",
+            "financialInsurance": "Asigurare financiară"
+        }
+    }
 }
